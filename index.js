@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the application." });
+  res.json({ message: "Welcome to the application on server v1.0.0 " });
 });
 
 const PORT = process.env.PORT || 8080;
