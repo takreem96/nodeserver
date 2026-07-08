@@ -21,4 +21,4 @@ jobs:
             git config --global --add safe.directory /home/vidzai/source/nodeserver
             cd /home/vidzai/source/nodeserver
             git pull origin master
-            docker compose up -d
+            docker compose up -d --build
