@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets. }}
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /home/vidzai/source/nodeserver
