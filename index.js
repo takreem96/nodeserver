@@ -6,7 +6,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
+let counter = 0;
 app.get("/", (req, res) => {
+  counter++;
+  console.log(`Request count: ${counter}`);
   res.json({ message: "Welcome to the application on server v1.0.0 " });
 });
 
